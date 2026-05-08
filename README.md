@@ -1,16 +1,24 @@
-# React + Vite
+# Calculadora de IMC (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status do Projeto](https://img.shields.io/badge/Status-Concluído-success)
+![React](https://img.shields.io/badge/React-Hooks-61DAFB?logo=react)
 
-Currently, two official plugins are available:
+## ⚖️ Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Uma aplicação interativa para cálculo de Índice de Massa Corporal (IMC), desenvolvida para solidificar os conceitos de gerenciamento de estado em interfaces reativas. O usuário insere suas medidas e o sistema calcula, classifica e exibe o resultado visualmente codificado por cores de forma instantânea.
 
-## React Compiler
+## 🧠 Aprendizados Técnicos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Neste projeto, apliquei conceitos vitais do ReactJS para aplicações dinâmicas:
 
-## Expanding the ESLint configuration
+* **Gerenciamento de Estado (`useState`):** Uso do hook fundamental para armazenar as entradas do usuário e os resultados computados, garantindo que a tela seja re-renderizada automaticamente a cada mudança.
+* **Componentes Controlados (Controlled Inputs):** Sincronização direta entre o valor de um `<input>` e uma variável de estado do React, controlando o fluxo de dados do formulário via eventos `onChange`.
+* **Manipulação de Eventos:** Tratamento da submissão de formulários (`onSubmit`) com a prevenção do comportamento padrão do navegador (`e.preventDefault()`).
+* **Renderização Condicional:** Uso de operadores lógicos no JSX (`&&`) para exibir a seção de resultados apenas após o cálculo ter sido efetuado com sucesso.
+* **Estilização Dinâmica:** Passagem de atributos `style` dinâmicos baseados nas variáveis de estado (ex: alteração da cor de feedback baseada na severidade do IMC).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Como Executar Localmente
+
+1. Clone o repositório:
+```bash
+git clone [https://github.com/SEU-USUARIO/projeto-15-calculadora-imc.git](https://github.com/SEU-USUARIO/projeto-15-calculadora-imc.git)
